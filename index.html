@@ -1,0 +1,1216 @@
+<!--
+
+
+Hit RUN to see this project in action!
+
+Feel free to edit the HTML and CSS to make it your own. You can also check the README.md file to know more.
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+    - emailJS
+  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "Gf41kPz-Tqu5kmH2v",
+      });
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cory Wynn</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Cory Wynn" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Cory Wynn">Cory Wynn</h1>
+
+          <p class="title">Strategy, Ops, and M&A</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:wynn.cory@gmail.com" class="contact-link">wynn.cory@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Book a meeting</p>
+
+              <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3EjTULj8vNfr1_wQqLUpBtqU9sCor1xIdleAzrFV7wrp8btI_rm0Zlcgz9KXW15gwA54CHS3Ws"
+                class="contact-link">Schedule Now</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Newport Beach, California, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://x.com/cory_wynn" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/coryswynn" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/cory_wynn" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/@corywynn1464" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/coryswynn" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!-- ABOUT -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            I’m Cory Wynn, a seasoned professional in M&A, corporate strategy, and operational transformation. My
+            passion lies in harnessing technology to reshape strategic initiatives, streamline complex operations, and
+            unlock new avenues of growth.
+          </p>
+          <p>
+            With a career spanning leadership roles at PwC’s Strategy&, Deloitte, and Angi, I’ve driven
+            multi-billion-dollar transactions and orchestrated data-driven strategies that deliver measurable impact.
+            From optimizing large-scale acquisitions to reimagining operational processes through digital solutions, I
+            bring a future-focused approach to every challenge.
+          </p>
+          <p>
+            I believe that the intersection of strategy and technology is where true innovation happens. Whether it’s
+            deploying advanced analytics to inform M&A decisions or leveraging digital tools to enhance operational
+            efficiency, my mission is to turn strategic visions into actionable, tech-empowered results.
+          </p>
+        </section>
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Experience</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm known for</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">M&A Strategy</h4>
+
+                <p class="service-item-text">
+                  Structuring and executing impactful mergers and acquisitions.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Corporate Strategy</h4>
+
+                <p class="service-item-text">
+                  Crafting strategies that align tech with business growth.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Operational Transformation</h4>
+
+                <p class="service-item-text">
+                  Optimizing operations with data-driven efficiency.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Tech-Driven Solutions</h4>
+
+                <p class="service-item-text">
+                  Leveraging technology to drive innovation and impact.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+  - #RESUME
+-->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="business-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">CEO, Contrast Coverage Texas</h4>
+              <span>2022 — Present</span>
+              <p class="timeline-text">
+                Founded and lead an innovative CCT, focusing on modernizing coverage options with technology-driven
+                solutions and strategic partnerships.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Associate Director, Angi</h4>
+              <span>2021 — Present</span>
+              <p class="timeline-text">
+                Leading strategic initiatives in the $60M Handyman division, driving revenue growth through data-driven
+                product experiments and operational optimization.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">VP, Growth & Community, Inspect</h4>
+              <span>2021 — 2022</span>
+              <p class="timeline-text">
+                Led strategic growth, GTM, and communications, overseeing revenue growth, community marketing, and
+                product strategy.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Head of Strategy & Growth, Good Apple Foods</h4>
+              <span>2019 — 2022</span>
+              <p class="timeline-text">
+                Developed new revenue models and improved margins, overseeing the company’s successful acquisition and
+                seamless transition.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Deals Strategy Engagement Manager, PwC | Strategy&</h4>
+              <span>2016 — 2020</span>
+              <p class="timeline-text">
+                Managed high-stakes M&A projects worth $40B+, delivering strategic insights and leading teams through
+                complex deal analyses.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Business Analyst, Deloitte Consulting</h4>
+              <span>2015 — 2016</span>
+              <p class="timeline-text">
+                Optimized post-merger operations and modeled real estate strategies for large-scale corporate mergers.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Rice University</h4>
+              <span>Class of 2015</span>
+              <p class="timeline-text">
+                Bachelor of Arts in Economics, GPA: 3.75/4.00. Focused on Game Theory, Corporate Finance, and
+                Econometrics.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+      <!-- #PORTFOLIO -->
+
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Project Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Software Development</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Design</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>M&A Consulting</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Software Development</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Design</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>M&A Consulting</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+
+
+            <!-- Development Projects -->
+            <li class="project-item active" data-project-item data-category="software development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="Google Docs SplitView" loading="lazy">
+                </figure>
+                <h3 class="project-title" data-project-title>Google Docs SplitView</h3>
+                <p class="project-category" data-project-text>Development</p>
+                <div class="hidden-description" data-project-description>
+                  Developed a Chrome extension that allows users to manage and view multiple Google Docs, Sheets, and
+                  Slides side-by-side. This tool leverages advanced JavaScript and Chrome APIs to handle real-time
+                  synchronization between documents, greatly enhancing user productivity and workflow. The project
+                  demonstrates strong skills in extension development, efficient DOM manipulation, and seamless UI/UX
+                  design.
+                  <br></br>
+                  Used by 4,000+ Users
+                </div>
+              </a>
+            </li>
+
+            <li class="project-item active" data-project-item data-category="software development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-2.png" alt="Weekly Social Media" loading="lazy">
+                </figure>
+                <h3 class="project-title" data-project-title>Weekly Social Media</h3>
+                <p class="project-category" data-project-text>Development</p>
+                <div class="hidden-description" data-project-description>
+                  Developed a mindful social media platform that encourages users to share weekly reflections with their
+                  closest connections. The platform emphasizes quality over quantity, eliminating ads, influencers, and
+                  engagement metrics to foster genuine interactions. Users are prompted to post once a week, reducing
+                  screen time and promoting thoughtful communication. The system includes features such as unique
+                  personal passphrases for secure community building, daily inspirational quotes, and options to keep
+                  certain reflections private. This project highlights expertise in user-centric design, privacy-focused
+                  development, and the creation of digital spaces that prioritize mental well-being and authentic
+                  relationships.
+                </div>
+              </a>
+            </li>
+
+            <li class="project-item active" data-project-item data-category="software development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-3.jpg" alt="Contrast Coverage Texas" loading="lazy">
+                </figure>
+                <h3 class="project-title" data-project-title>Contrast Coverage Texas</h3>
+                <p class="project-category" data-project-text>Development</p>
+                <div class="hidden-description" data-project-description>
+                  Developed both the website and application for Contrast Coverage Texas, a service specializing in
+                  virtual supervision of contrast media administration in radiology. The platform offers healthcare
+                  facilities access to certified radiologists who provide real-time oversight during contrast-enhanced
+                  imaging procedures, ensuring patient safety and compliance with medical standards. Key features
+                  include secure video conferencing for virtual supervision, integration with existing imaging systems,
+                  and comprehensive scheduling tools to facilitate seamless coordination between technologists and
+                  supervising radiologists. This project highlights expertise in healthcare technology, telemedicine
+                  solutions, and the development of secure, user-friendly applications tailored to the needs of medical
+                  professionals.
+                </div>
+              </a>
+            </li>
+
+            <li class="project-item active" data-project-item data-category="software development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-5.png" alt="Angi AI Reviewer" loading="lazy">
+                </figure>
+                <h3 class="project-title" data-project-title>Angi AI Reviewer</h3>
+                <p class="project-category" data-project-text>Development</p>
+                <div class="hidden-description" data-project-description>
+                  Built an AI-driven system for content moderation and review for Angi, leveraging natural language
+                  processing (NLP) to automate the review of user-generated content. This project required strong
+                  proficiency in machine learning, API design, and scalable architecture.
+                </div>
+              </a>
+            </li>
+
+            <!-- Design Projects -->
+            <li class="project-item active" data-project-item data-category="design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-4.png" alt="Comedy Coop Logo Design" loading="lazy">
+                </figure>
+                <h3 class="project-title" data-project-title>Comedy Coop Logo Design</h3>
+                <p class="project-category" data-project-text>Design</p>
+                <div class="hidden-description" data-project-description>
+                  Designed a modern and playful logo for Comedy Coop, a creative cooperative aimed at comedians. Focused
+                  on visual storytelling and branding principles to resonate with the target audience. This project
+                  emphasizes creativity, brand strategy, and effective use of design tools.
+                </div>
+              </a>
+            </li>
+
+            <!-- M&A Consulting Projects -->
+            <li class="project-item active" data-project-item data-category="m&a consulting">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-6.png" alt="Cloud Services Channel Partner" loading="lazy">
+                </figure>
+                <h3 class="project-title" data-project-title>Cloud Services Due Diligence</h3>
+                <p class="project-category" data-project-text>M&A Consulting</p>
+                <div class="hidden-description" data-project-description>
+                  Led a comprehensive commercial due diligence project, evaluating market trends and vendor strategies
+                  for a cloud services company. Managed a team of analysts and delivered a detailed report highlighting
+                  growth opportunities and risks. This project showcases strategic thinking, data analysis, and
+                  leadership skills in the technology sector.
+                </div>
+              </a>
+            </li>
+
+            <li class="project-item active" data-project-item data-category="m&a consulting">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-7.png" alt="Privileged Access Management" loading="lazy">
+                </figure>
+                <h3 class="project-title" data-project-title>Access Management Diligence</h3>
+                <p class="project-category" data-project-text>M&A Consulting</p>
+                <div class="hidden-description" data-project-description>
+                  Conducted an in-depth review of a target company’s business plan for a Privileged Access Management
+                  (PAM) solution. Balanced stakeholder interests and analyzed key market and competitor data. Produced a
+                  comprehensive, data-driven evaluation that supported client investment decisions, showcasing expertise
+                  in cybersecurity and strategic consulting.
+                </div>
+              </a>
+            </li>
+
+            <li class="project-item active" data-project-item data-category="m&a consulting">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-8.jpg" alt="Real Estate Merger" loading="lazy">
+                </figure>
+                <h3 class="project-title" data-project-title>Real Estate Merger</h3>
+                <p class="project-category" data-project-text>M&A Consulting</p>
+                <div class="hidden-description" data-project-description>
+                  Supported a $5 billion real estate merger, developing models to forecast post-merger cash flow and
+                  CapEx investments. Created a global market analysis tool used in international workshops. Demonstrated
+                  skills in financial modeling, real estate market analysis, and delivering actionable insights to
+                  C-level executives.
+                </div>
+              </a>
+            </li>
+
+            <li class="project-item active" data-project-item data-category="m&a consulting">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-9.png" alt="Technology Divestiture" loading="lazy">
+                </figure>
+                <h3 class="project-title" data-project-title>Technology Divestiture</h3>
+                <p class="project-category" data-project-text>M&A Consulting</p>
+                <div class="hidden-description" data-project-description>
+                  Managed the separation of a major technology firm, documenting and improving current and future-state
+                  processes. Developed a detailed employee operations manual, coordinating with senior leadership. This
+                  project highlights strong project management, process improvement, and collaboration skills.
+                </div>
+              </a>
+            </li>
+
+            <li class="project-item active" data-project-item data-category="m&a consulting">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-10.png" alt="Artificial Lift Sell Side Diligence" loading="lazy">
+                </figure>
+                <h3 class="project-title" data-project-title>Artificial Lift Sell Side Diligence</h3>
+                <p class="project-category" data-project-text>M&A Consulting</p>
+                <div class="hidden-description" data-project-description>
+                  Conducted sell-side due diligence for a company specializing in artificial lift technology. Analyzed
+                  market dynamics, customer behavior, and competitive positioning. Delivered a strategic report that
+                  guided the client through the sale process, showcasing Cory’s expertise in energy sector consulting
+                  and strategic advisement.
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Project Modal -->
+      <div class="modal-container" id="project-modal-container">
+        <div class="overlay" data-project-overlay></div>
+        <section class="project-modal">
+          <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="modal-content">
+            <h4 class="h3 modal-title" id="project-modal-title">Project Title</h4>
+            <div id="project-modal-text">
+              <p>Project content...</p>
+            </div>
+            <div id="project-modal-description">
+              <p>Project description...</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Blog Post Modal -->
+      <div class="modal-container" id="blog-modal-container">
+        <div class="overlay" data-blog-overlay></div>
+        <section class="blog-modal">
+          <button class="modal-close-btn" data-blog-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div>
+            <!-- Image at the top -->
+            <!-- <img class="blog-modal-image" id="blog-modal-image" alt="Blog Image" /> -->
+
+            <!-- Metadata section -->
+            <div class="blog-meta">
+              <p class="blog-modal-category" id="blog-modal-category"></p>
+              <span class="dot">•</span>
+              <time class="blog-modal-date" id="blog-modal-date"></time>
+            </div>
+
+            <!-- Blog title -->
+            <h4 class="blog-modal-title" id="blog-modal-title">Blog Title</h4>
+
+            <!-- Blog text content -->
+            <div class="blog-modal-text" id="blog-modal-text">
+              <p>Blog content...</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+
+      <!-- #BLOG -->
+      <article class="blog" data-page="blog">
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+
+            <!-- Blog Post Item 1 -->
+            <li class="blog-post-item" data-blog-item>
+              <a href="#">
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Technology</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-11-12">Nov 12, 2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title" data-blog-title>The Future of Technology M&A</h3>
+                  <p class="blog-text truncate-text" data-blog-text>
+                    The landscape of technology mergers and acquisitions (M&A) is rapidly evolving as advancements in
+                    AI, cloud infrastructure, and edge computing redefine strategic priorities. Companies are no longer
+                    simply seeking market dominance through size but are instead prioritizing acquisitions that provide
+                    access to transformative intellectual property, critical data sets, and top-tier talent pools. As
+                    industry boundaries continue to blur, the trend is clear: tech companies are stepping outside their
+                    traditional markets to build comprehensive ecosystems that seamlessly combine hardware, software,
+                    and services. This expansion into new verticals isn't just about diversification; it's about
+                    creating a holistic presence that spans multiple consumer touchpoints and business workflows,
+                    positioning themselves as indispensable components of a digital-first world.
+                    <br></br>
+                    The motivation behind this shift can be attributed to the increasing value placed on data and
+                    integration. In a hyperconnected world, data is the new oil, but it requires advanced analytics,
+                    machine learning algorithms, and high-performance cloud infrastructure to extract meaningful
+                    insights. By acquiring companies with established data-driven capabilities, firms are better
+                    equipped to leverage predictive analytics, automate decision-making processes, and personalize
+                    customer experiences at scale. Moreover, the acquisition of talent—especially teams with specialized
+                    skills in AI, cybersecurity, or software engineering—provides an added advantage, allowing
+                    organizations to stay at the forefront of technological innovation without the costly and
+                    time-consuming process of building in-house expertise from scratch.
+                    <br></br>
+                    However, this shift introduces new challenges. Speed in execution has become more important than
+                    ever, but a fast-paced acquisition environment risks missing critical elements of integration, such
+                    as cultural fit and technological compatibility. The pressure to close deals quickly can lead to
+                    oversights that are costly to fix post-acquisition. For example, integrating disparate technology
+                    stacks without a well-thought-out strategy can result in security vulnerabilities, inefficiencies,
+                    and compatibility issues that hinder rather than accelerate growth. Cultural integration is equally
+                    crucial; a clash in work cultures or leadership philosophies can demotivate key talent, leading to
+                    an exodus of high-value employees and a subsequent erosion of the acquisition’s intended benefits.
+                    <br></br>
+                    The use of AI-powered analytics in due diligence has emerged as both a boon and a potential risk. On
+                    the one hand, these tools can analyze vast amounts of data to identify red flags, optimize
+                    valuations, and predict future market trends more accurately than traditional methods. They allow
+                    for a more data-driven approach, uncovering synergies and risks that might otherwise go unnoticed.
+                    However, reliance on automated systems also comes with its own set of concerns, particularly around
+                    data privacy and algorithmic bias. Regulatory bodies are increasingly scrutinizing how data is used
+                    and shared, and any missteps could result in substantial fines and reputational damage. Companies
+                    must tread carefully, ensuring that they adhere to robust regulatory standards while still
+                    capitalizing on the speed of innovation.
+                    <br></br>
+                    Looking ahead, the future of tech M&A will require a sophisticated balance between rapid action and
+                    thoughtful integration. Companies that can navigate this balance will emerge as leaders, capable of
+                    harnessing the full potential of their acquisitions. The strategies employed will have to be
+                    multidimensional, involving not only financial and operational planning but also a deep
+                    understanding of the societal and regulatory implications of these large-scale deals. The
+                    integration process itself will likely evolve, with greater emphasis placed on modular and
+                    API-driven approaches that allow acquired technologies to be seamlessly incorporated into existing
+                    ecosystems without significant disruption.
+                    <br></br>
+                    Strategic partnerships and joint ventures may also become more prominent as firms look for ways to
+                    share risk and accelerate market entry without fully committing to a buyout. In industries such as
+                    healthcare technology, autonomous vehicles, and quantum computing, the investment required for
+                    innovation is so vast that no single company can shoulder the burden alone. By forming alliances,
+                    companies can pool resources, share research, and create standards that benefit the entire industry.
+                    Yet, these arrangements will require robust governance frameworks to ensure that intellectual
+                    property is protected and that each partner’s strategic interests are aligned.
+                    <br></br>
+                    The key will be adaptability, both in strategic vision and operational execution, as the pace of
+                    technological change continues to accelerate. Companies must remain agile, willing to pivot when
+                    necessary, and prepared to invest in continuous learning and development. Leadership will play a
+                    crucial role, setting a tone of resilience and forward-thinking innovation that cascades throughout
+                    the organization. As new technologies emerge, from decentralized finance (DeFi) to next-generation
+                    5G networks, the companies that can rapidly assess and integrate these innovations will have a
+                    significant competitive edge. The future of tech M&A is not for the faint-hearted, but for those
+                    with the foresight and flexibility to embrace change, it holds unparalleled opportunities for growth
+                    and industry leadership.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Blog Post Item 2 -->
+            <li class="blog-post-item" data-blog-item>
+              <a href="#">
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Strategy</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-11-05">Nov 5, 2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title" data-blog-title>Strategic Innovations for Market Leaders</h3>
+                  <p class="blog-text truncate-text" data-blog-text>
+                    In an era where markets evolve at breakneck speed, strategic innovation is no longer optional—it’s a
+                    fundamental necessity for survival. For market leaders, the challenge lies not just in adopting new
+                    technologies but in anticipating shifts before they happen. Incremental innovation might sustain a
+                    business temporarily, but true growth comes from a willingness to disrupt oneself and the industry.
+                    Take, for example, the automotive industry: traditional car manufacturers are pouring resources into
+                    software development and autonomous driving technology, fundamentally rethinking what it means to be
+                    in the "transportation" business.
+                    <br></br>
+                    However, disruptive innovation comes with high stakes. Misallocating resources or pursuing the wrong
+                    technological trend can have catastrophic consequences. The balance between investing in core
+                    business operations and exploring new avenues is delicate. Open innovation—where companies
+                    collaborate with external startups, research institutions, or even competitors—has proven to be a
+                    game-changer. This model not only diversifies risk but also accelerates the development of
+                    cutting-edge solutions, turning potential threats into opportunities.
+                    <br></br>
+                    As companies adopt this open approach, they also need to rethink their organizational cultures.
+                    Innovation thrives in environments that encourage experimentation and tolerate failure. Leaders must
+                    set the tone by fostering collaboration and agility. Ultimately, strategic innovation is about more
+                    than technology; it’s about building a resilient, forward-thinking organization that can adapt to
+                    change and capitalize on new opportunities. Only then can market leaders sustain their competitive
+                    edge in an increasingly complex and interconnected world.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Blog Post Item 3 -->
+            <li class="blog-post-item" data-blog-item>
+              <a href="#">
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Thought Leadership</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-10-29">Oct 29, 2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title" data-blog-title>Navigating the Challenges of Digital Transformation
+                  </h3>
+                  <p class="blog-text truncate-text" data-blog-text>
+                    Digital transformation is a multi-layered journey that goes beyond the simple adoption of new
+                    technologies. At its core, it’s about reshaping business models, enhancing customer experiences, and
+                    fundamentally rethinking how value is delivered. Yet, many organizations struggle with this
+                    transformation, particularly when dealing with entrenched legacy systems that are difficult to
+                    integrate. The key to overcoming these challenges lies in a strategic vision supported by leadership
+                    that is not only committed but also adaptive to change.
+                    <br></br>
+                    One of the most significant obstacles is resistance to cultural change. Digital transformation
+                    requires a culture that embraces innovation, experimentation, and even failure. Companies that
+                    succeed in this realm often have leaders who actively promote a mindset of continuous improvement
+                    and who understand that failure is a stepping stone to eventual success. Building such a culture
+                    takes time but is essential for driving sustainable change and maintaining a competitive edge.
+                    <br></br>
+                    Another crucial aspect of digital transformation is prioritizing customer experience. The companies
+                    that excel are those that put the customer at the center of their strategies, using data to
+                    personalize interactions and anticipate needs. This requires significant investment in data
+                    governance and analytics capabilities. Data, when managed correctly, becomes the most valuable asset
+                    a company can leverage, turning raw information into actionable insights. Ultimately, digital
+                    transformation is about aligning technology with strategic business goals, ensuring that every
+                    digital initiative delivers measurable value and propels the organization forward in a rapidly
+                    changing environment.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </section>
+      </article>
+
+      <!-- Blog Post Modal -->
+      <div class="modal-container" id="blog-modal-container">
+        <div class="overlay" data-blog-overlay></div>
+        <section class="blog-modal">
+          <button class="modal-close-btn" data-blog-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div>
+            <!-- Image at the top -->
+            <!-- <img class="blog-modal-image" id="blog-modal-image" alt="Blog Image" /> -->
+
+            <!-- Metadata section -->
+            <div class="blog-meta">
+              <p class="blog-modal-category" id="blog-modal-category"></p>
+              <span class="dot">•</span>
+              <time class="blog-modal-date" id="blog-modal-date"></time>
+            </div>
+
+            <!-- Blog title -->
+            <h4 class="blog-modal-title" id="blog-modal-title">Blog Title</h4>
+
+            <!-- Blog text content -->
+            <div class="blog-modal-text" id="blog-modal-text">
+              <p>Blog content...</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167894.68408009226!2d-117.9262961723895!3d33.61891025415743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdeac1b6b7db7%3A0xe8f62f260195f42d!2sNewport%20Beach%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
